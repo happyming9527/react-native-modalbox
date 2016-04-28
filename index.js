@@ -185,6 +185,13 @@ var ModalBox = React.createClass({
       if (this.props.onOpened) this.props.onOpened();
     });
   },
+  
+  /*
+   * get modal status
+   */
+  isOpened() {
+    return this.state.isOpen
+  },
 
   /*
    * Stop closing animation
